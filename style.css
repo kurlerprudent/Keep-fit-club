@@ -6,26 +6,31 @@
   font-family: "Montserrat", sans-serif;
   background-repeat: no-repeat;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --themeColor: #9966ff;
 }
+/* header and nav bar section */
 header {
-  width: 100%;
   height: 67px;
   display: flex;
   align-items: center;
   position: fixed;
-  top: 0; /* Position the navbar at the top of the page */
+  top: 0;
   width: 100%;
   background-color: #fff;
-  padding: 5pxpx;
+  padding: 5px;
   margin: 0%;
+  transition: all 500ms ease;
 }
 header nav {
   width: 70%;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 nav ul {
   display: flex;
@@ -45,6 +50,7 @@ nav a {
 header nav a:hover {
   color: var(--themeColor);
 }
+/* Social Icons and Log In Button */
 .otherNavItems {
   display: flex;
   cursor: pointer;
@@ -85,13 +91,15 @@ header nav a:hover {
   color: #fff;
   font-size: 30px;
 }
+/* menu Icon and togglemenu */
 .menuToggle {
   display: none;
 }
 #appearOnsmallScreen {
   display: none;
 }
-@media (max-width: 400px) {
+
+@media (max-width: 909px) {
   nav {
     width: 100%;
     padding-top: 30px;
@@ -135,6 +143,7 @@ header nav a:hover {
     color: var(--themeColor);
   }
 }
+/* main section- body */
 .newSection {
   margin-top: 70px;
   height: 92vh;
@@ -173,7 +182,7 @@ header nav a:hover {
   color: #fff;
   cursor: pointer;
 }
-@media (max-width: 400px) {
+@media (max-width: 909px) {
   .newSection {
     margin-top: 70px;
     height: 92vh;
@@ -207,6 +216,7 @@ header nav a:hover {
   }
 }
 
+/* Section 2 -Body */
 .newSection1 {
   width: 100%;
   display: flex;
@@ -227,6 +237,9 @@ header nav a:hover {
   margin-left: 50px;
   margin-top: 50px;
 }
+#subordinateImage {
+  display: none;
+}
 .bx-dumbbell {
   font-size: 80px;
   color: var(--themeColor);
@@ -238,27 +251,38 @@ header nav a:hover {
 .rightItems span {
   color: #444444;
 }
-@media (max-width: 400px) {
+@media (max-width: 900px) {
+    header{
+        padding: 0%;
+    }
   .newSection1 {
     width: 100%;
-    max-width: 400px;
     display: block;
     padding: 0%;
     margin: 0%;
-    margin-top: 10px;
-  }
+    margin-top: 10px;  }
   .newSection1 img {
-    aspect-ratio: 1/1;
     width: 100%;
     margin-left: 0;
+    height: 50%;
+    height: auto;
+  }
+  #subordinateImage {
+    display: block;
+  }
+  .newSection1 #main {
+    display: none;
   }
   .newSection1 .slimDown {
     margin: 70px 0;
+    width: 100%;
   }
   .rightItems {
     text-align: center;
     width: 100%;
-    max-width: 400px;
     margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
