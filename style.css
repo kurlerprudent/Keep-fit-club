@@ -124,6 +124,10 @@ header nav a:hover {
   }
   .otherNavItems {
     display: none;
+    
+  }
+  #appearOnsmallScreen{
+    padding-right:50px ;
   }
   .socialIcons {
     width: 90%;
