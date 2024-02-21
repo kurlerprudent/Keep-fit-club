@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keep fit Club</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#Home">HOME</a>
-            <a href="#About">ABOUT</a>
-            <a href="#Private">PRIVATE SESSIONS</a>
-            <a href="Contact">CONTACT US</a>
-        </nav>
-        <div class="log_In">
-            <div style="width: 100%; margin-top: 20px;">
-                <a href="">  
-                    Log in
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                <img class="log_In_Icon" src="user.svg" alt="log In">
-                </a>
-            </div>
-           
-        
-        </div>
-        <div class="top_Icons">
-            <img class="top_Icons_items" src="youtube.svg" alt="YouTube Logo">
-            <img class="top_Icons_items" src="facebook (1).svg" alt="facebook">
-            <img class="top_Icons_items" src="instagram.svg" alt="instagram">
-            <img class="top_Icons_items" src="whatsapp.svg" alt="whatsapp">
-        </div>
-        <div class="menu_symbol">
-            <img src="hamburger-menu.svg" alt="">
-        </div>
+      <nav>
+        <ul>
+          <a href="#">
+            <li>
+              <div class="otherNavItems" id="appearOnsmallScreen">
+                <div class="logIn">Log In</div>
+                <div class="user">
+                  <i class="bx bx-user bx-border-circle"></i>
+                </div>
+              </div></li
+          ></a>
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>Video Courses</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Plan & Pricing</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <div class="otherNavItems">
+        <div class="logIn">Log In</div>
+        <div class="user"><i class="bx bx-user bx-border-circle"></i></div>
+      </div>
+      <div class="socialIcons">
+        <a href="#"> <i class="bx bxl-youtube"></i> </a>
+        <a href="#"> <i class="bx bxl-instagram"></i> </a>
+        <a href="#"> <i class="bx bxl-facebook"></i> </a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <div class="menuToggle"><i class="bx bx-menu" id="menuButton"></i></div>
     </header>
-    <section>
-        <div class="Riley_background_Image">
-            <img class="first_section_desktop_view" src="gal-gadot-pictures-boy341gjihhjysm0.jpg" alt="">
-            
+    <div class="newSection">
+      <div class="content">
+        <h1>
+          <i>Train With Amelia</i>
+        </h1>
+        <div class="paragraph">
+          I'm a paragraph. Click here to add your own text and edit me. Let your
+          users get to know you.
         </div>
-        <div class="first_section_text">
-            <h2>TRAIN</h2>
-            <h2>WITH HAJIA</h2>
-            <p></p>
+        <button>Watch Now</button>
+      </div>
+    </div>
+    <div class="newSection1">
+      <img src="riley2.webp" alt="#" id="main"/>
+      <div class="rightItems">
+        <div class="slimDown">
+          <i class="bx bx-dumbbell"></i>
+          <h1>Slim Down, Tone Up!</h1>
+          <span>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font
+          </span>
         </div>
-    </section>
-</body>
+      </div>
+      <img src="riley2.webp" alt="#" id="subordinateImage"/>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
